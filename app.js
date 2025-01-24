@@ -52,7 +52,7 @@ function alterarStatusBotaoReiniciar(){
 }
   
 function validarSorteio(quantidade,de,ate){
-    if (!isNaN(quantidade) || !isNaN(de) || !isNaN(ate)) {
+    if (!isNaN(quantidade) && !isNaN(de) && !isNaN(ate)) {
         if (de <= ate){
             if (quantidade < (ate - de + 1)) {
                 if (quantidade >0){
